@@ -1,4 +1,4 @@
-# From|Scracht
+# From | Scracht
 
 A lightweight boilerplate starter kit.
 
