@@ -1,0 +1,99 @@
+  ///////////////////
+ // MAIN SETTINGS //
+///////////////////
+
+$theme-name:                                                          "Starship" !default;
+$author:                                                              "Norberto Alonso" !default;  
+  
+//Paths
+$img-path: 												                                    "images" !default;
+$font-path: 										                                      "fonts" !default;
+
+//Logo
+//$logo:                                                              "/main-logo.png";
+//$logo-path:                                                         $img-path + $logo;
+
+//fonts
+$font-family-primary:                                                 'Open Sans', Helvetica, Arial, sans-serif !default;
+
+//font weights
+$light:                                                               '300' !default;
+$regular:                                                             '400' !default;
+$semi-bold:                                                           '600' !default;
+$bold:                                                                '700' !default;
+
+//border
+$border-size:                                                         1px !default;
+$border-style:                                                        solid !default;
+$border-radius-size:                                                  4px !default;
+
+  //////////////////
+ // Color Scheme //
+//////////////////
+
+//Palette
+$color-1:                                                             #DCE491;
+$color-2:                                                             #101202;
+$color-3:                                                             #C4D613;
+$color-4:                                                             #565708;
+$color-5:                                                             #909E0E;
+
+//Main Colors
+$brightest-color:                                                      $color-1 !default;
+$darkest-color:                                                        $color-2 !default;
+$brand-color:                                                          $color-3 !default;
+$bg-main-color:                                                        $brightest-color !default;
+$font-color:                                                           $darkest-color !default;
+$font-highlight:                                                       $color-4 !default;
+
+
+  ///////////
+ // Sizes //
+///////////
+
+$main-wrapper-max-width:                                               1280px !default;
+$sidebar-size:                                                         20% !default;
+$wrapper-size:                                                         80% !default;
+
+
+
+  ////////////
+ // Mixins //
+////////////
+                          
+//LINEAR GRADIENT
+@mixin linear-gradient($color-from, $color-to, $type: vertical) {
+  @if $color-from and $color-to {
+	
+  $alpha: alpha($color-to);
+  @if $alpha < 1 {
+    $color-rgb: change_color($color, $alpha: 1);
+    background-color: $color-rgb;
+  }
+  @else {
+    background-color: $color-to;
+  }
+
+	$ie-from: ie-hex-str($color-from);
+	$ie-to: ie-hex-str($color-to);
+    
+  $webkit: 'left top, left bottom';
+  $spec: '';
+  $ie: 0;
+    
+  @if $type == left-right {
+     $webkit: 'left top, right bottom';
+     $spec: '135deg,';
+     $ie: 1;
+  }
+  @if $type == right-left {
+     $webkit: 'left bottom, right top';
+     $spec: '45deg,';
+     $ie: 1;
+  }
+  background-image: -webkit-gradient($type, #{$webkit}, from($color-from), to($color-to));
+  background-image: -webkit-linear-gradient(#{$spec} $color-from, $color-to);
+  background-image: linear-gradient(#{$spec} $color-from, $color-to);
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$ie-from}', endColorstr='#{$ie-to}', GradientType=#{$ie});
+  }
+}
