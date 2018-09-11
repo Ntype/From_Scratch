@@ -1,13 +1,22 @@
-# From | Scracht
+# Motherbase
 
-A lightweight boilerplate starter kit.
+A personal blank boilerplate starter kit on three flavors .
 
 ## Built With
 
 * [HTML5](https://www.w3.org/html/logo/)
 * [SASS](http://sass-lang.com/)
+
+## Based On
+
 * [Google Web starter Kit](https://developers.google.com/web/tools/starter-kit/)
-* [html5 Boilerplate](https://html5boilerplate.com/)
+* [Html5 Boilerplate](https://html5boilerplate.com/)
+* [Bootstrap](https://getbootstrap.com/)
+* [Html5 Blank](http://html5blank.com/)
+
+## Syntax Compatible With
+
+* [Bootstrap](https://getbootstrap.com/)
 
 ## Author
 
