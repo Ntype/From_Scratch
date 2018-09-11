@@ -1,6 +1,6 @@
 # Motherbase
 
-A personal blank boilerplate starter kit on three flavors .
+A blank personal boilerplate starter kit on three flavors .
 
 ## Built With
 
