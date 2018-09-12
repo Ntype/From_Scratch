@@ -11,12 +11,8 @@ A blank personal boilerplate starter kit on three flavors .
 
 * [Google Web starter Kit](https://developers.google.com/web/tools/starter-kit/)
 * [Html5 Boilerplate](https://html5boilerplate.com/)
-* [Bootstrap](https://getbootstrap.com/)
 * [Html5 Blank](http://html5blank.com/)
 
-## Syntax Compatible With
-
-* [Bootstrap](https://getbootstrap.com/)
 
 ## Author
 

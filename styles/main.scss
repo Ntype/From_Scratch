@@ -2,8 +2,13 @@
 
 // IMPORTS
 
-@import 'layout';
+// @import 'layout';
 @import 'variables';
+
+html{
+    box-sizing: border-box;
+    font-family: $font-family-primary;
+}
 
 .container-fluid {
   margin-right: auto;

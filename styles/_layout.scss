@@ -1,6 +1,18 @@
 
 /* LAYOUT ============================== */
 
+.container{
+  display: flex;
+}
+
+.row{
+  flex-direction: row;
+}
+
+.col{
+  flex-direction: column;
+}
+
 /* FLEX SYSTEM */
 
 .flex {

@@ -3,25 +3,26 @@
 /////////////////// 
   
 //Paths
-$img-path: 												                                    "images" !default;
+$img-path: 												                                    "images";
 
 //Logo
-//$logo:                                                              "/main-logo.png";
-//$logo-path:                                                         $img-path + $logo;
+$logo:                                                              "/main-logo.png";
+$logo-path:                                                         $img-path + $logo;
 
 //fonts
-$font-family-primary:                                                 'Open Sans', Helvetica, Arial, sans-serif !default;
+$primary-font:                                                     'Open Sans'; 
+$font-family-primary:                                              $primary-font, Helvetica, Arial, sans-serif;
 
 //font weights
-$light:                                                               '300' !default;
-$regular:                                                             '400' !default;
-$semi-bold:                                                           '600' !default;
-$bold:                                                                '700' !default;
+$light:                                                               '300';
+$regular:                                                             '400';
+$semi-bold:                                                           '600';
+$bold:                                                                '700';
 
 //border
-$border-size:                                                         1px !default;
-$border-style:                                                        solid !default;
-$border-radius-size:                                                  4px !default;
+$border-size:                                                         1px;
+$border-style:                                                        solid;
+$border-radius-size:                                                  4px;
 
   //////////////////
  // Color Scheme //
@@ -35,20 +36,20 @@ $color-4:                                                             #565708;
 $color-5:                                                             #909E0E;
 
 //Main Colors
-$brightest-color:                                                      $color-1 !default;
-$darkest-color:                                                        $color-2 !default;
-$brand-color:                                                          $color-3 !default;
-$bg-main-color:                                                        $brightest-color !default;
-$font-color:                                                           $darkest-color !default;
-$font-highlight:                                                       $color-4 !default;
+$brightest-color:                                                      $color-1;
+$darkest-color:                                                        $color-2;
+$brand-color:                                                          $color-3;
+$bg-main-color:                                                        $brightest-color;
+$font-color:                                                           $darkest-color;
+$font-highlight:                                                       $color-4;
 
 
   ///////////
  // Sizes //
 ///////////
 
-$main-wrapper-max-width:                                               1280px !default;
-$sidebar-size:                                                         20% !default;
-$wrapper-size:                                                         80% !default;
-
+$main-wrapper-max-width:                                               1280px;
+$sidebar-size:                                                         20%;
+$wrapper-size:                                                         80%;
+$gap:                                                                  30px;
          
