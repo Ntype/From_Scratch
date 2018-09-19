@@ -3,7 +3,10 @@
 /* LAYOUT ============================== */
 
 .container{
-  height: 320px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 2rem;
+  padding-left: 2rem;
 }
 
 .row{
@@ -15,59 +18,170 @@
   align-content:stretch;
 }
 
-[class^="col-"]{
-  background-color: blue;
+[class^="col"]{
+  background-color: transparent;
+  border: 1px solid black;
+  margin: 5px 15px;
+  padding: 2px 5px;
+  overflow: hidden;
 }
 
 .col{
   width: auto;
 }
 
-.col-12 {
-  width: 100%;
-}
-.col-11 {
-  width: 91.66666667%;
-}
-.col-10 {
-  width: 83.33333333%;
-}
-.col-9 {
-  width: 75%;
-}
-.col-8 {
-  width: 66.66666667%;
-}
-.col-7 {
-  width: 58.33333333%;
-}
-.col-6 {
-  width: 50%;
-}
-.col-5 {
-  width: 41.66666667%;
-}
-.col-4 {
-  width: 33.33333333%;
-}
-.col-3 {
-  width: 25%;
-}
-.col-2 {
-  width: 16.66666667%;
-}
-.col-1 {
-  width: 8.33333333%;
-}
+/*MOBILE FIRST*/
 
-@media (min-width: 768px) {
+/*XS*/
+.col-xs-12 {width: 100%;}
+.col-xs-11 {width: 91.66666667%;}
+.col-xs-10 {width: 83.33333333%;}
+.col-xs-9 {width: 75%;}
+.col-xs-8 {width: 66.66666667%;}
+.col-xs-7 {width: 58.33333333%;}
+.col-xs-6 {width: 50%;}
+.col-xs-5 {width: 41.66666667%;}
+.col-xs-4 {width: 33.33333333%;}
+.col-xs-3 {width: 25%;}
+.col-xs-2 {width: 16.66666667%;}
+.col-xs-1 {width: 8.33333333%;}
+
+
+/* MEDIA SCREEN FOR RESPONSIVE ============================== */
+
+@media only screen and (min-width: 576px) {
+
+  /*SM*/
+  .col-sm-12 {width: 100%;}
+  .col-sm-11 {width: 91.66666667%;}
+  .col-sm-10 {width: 83.33333333%;}
+  .col-sm-9 {width: 75%;}
+  .col-sm-8 {width: 66.66666667%;}
+  .col-sm-7 {width: 58.33333333%;}
+  .col-sm-6 {width: 50%;}
+  .col-sm-5 {width: 41.66666667%;}
+  .col-sm-4 {width: 33.33333333%;}
+  .col-sm-3 {width: 25%;}
+  .col-sm-2 {width: 16.66666667%;}
+  .col-sm-1 {width: 8.33333333%;}
 
 }
 
-@media (min-width: 992px) {
-  
+@media only screen and (min-width: 768px) {
+
+  /*MD*/
+  .col-md-12 {width: 100%;}
+  .col-md-11 {width: 91.66666667%;}
+  .col-md-10 {width: 83.33333333%;}
+  .col-md-9 {width: 75%;}
+  .col-md-8 {width: 66.66666667%;}
+  .col-md-7 {width: 58.33333333%;}
+  .col-md-6 {width: 50%;}
+  .col-md-5 {width: 41.66666667%;}
+  .col-md-4 {width: 33.33333333%;}
+  .col-md-3 {width: 25%;}
+  .col-md-2 {width: 16.66666667%;}
+  .col-md-1 {width: 8.33333333%;}
+
 }
-@media (min-width: 1200px) {
-  
+
+@media only screen and (min-width: 992px) {
+
+  /*LG*/
+  .col-lg-12 {width: 100%;}
+  .col-lg-11 {width: 91.66666667%;}
+  .col-lg-10 {width: 83.33333333%;}
+  .col-lg-9 {width: 75%;}
+  .col-lg-8 {width: 66.66666667%;}
+  .col-lg-7 {width: 58.33333333%;}
+  .col-lg-6 {width: 50%;}
+  .col-lg-5 {width: 41.66666667%;}
+  .col-lg-4 {width: 33.33333333%;}
+  .col-lg-3 {width: 25%;}
+  .col-lg-2 {width: 16.66666667%;}
+  .col-lg-1 {width: 8.33333333%;}
+
 }
+
+@media only screen and (min-width: 1200px) {
+
+  /*XL*/
+  .col-xl-12 {width: 100%;}
+  .col-xl-11 {width: 91.66666667%;}
+  .col-xl-10 {width: 83.33333333%;}
+  .col-xl-9 {width: 75%;}
+  .col-xl-8 {width: 66.66666667%;}
+  .col-xl-7 {width: 58.33333333%;}
+  .col-xl-6 {width: 50%;}
+  .col-xl-5 {width: 41.66666667%;}
+  .col-xl-4 {width: 33.33333333%;}
+  .col-xl-3 {width: 25%;}
+  .col-xl-2 {width: 16.66666667%;}
+  .col-xl-1 {width: 8.33333333%;}
+
+}
+
+
+/* MEDIA PRINT ============================== */
+
+@media print {
+  *,
+  *:before,
+  *:after {
+      background: transparent !important;
+      color: #000 !important;
+      box-shadow: none !important;
+      text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+      text-decoration: underline;
+  }
+
+  a[href]:after {
+      content: " (" attr(href) ")";
+  }
+
+  abbr[title]:after {
+      content: " (" attr(title) ")";
+  }
+
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+      content: "";
+  }
+
+  pre,
+  blockquote {
+      border: 1px solid #999;
+      page-break-inside: avoid;
+  }
+
+  thead {
+      display: table-header-group;
+  }
+
+  tr,
+  img {
+      page-break-inside: avoid;
+  }
+
+  img {
+      max-width: 100% !important;
+  }
+
+  p,
+  h2,
+  h3 {
+      orphans: 3;
+      widows: 3;
+  }
+
+  h2,
+  h3 {
+      page-break-after: avoid;
+  }
+}
+
 
