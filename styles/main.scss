@@ -1,7 +1,7 @@
 /* MAIN CSS */
 
 @import 'variables';
-@import 'layout';
+
 
 html{
     box-sizing: border-box;
@@ -12,12 +12,7 @@ body{
     color:$font-color;
 }
 
-
+@import 'layout';
 
 /*MOTHERSHIP THEME*/
 
-
-
-
-// Media
-@import '_media.scss';

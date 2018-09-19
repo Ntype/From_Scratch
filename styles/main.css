@@ -1,5 +1,19 @@
 /* MAIN CSS */
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+body {
+  color: #101202;
+}
+
 /* LAYOUT ============================== */
+.container {
+  margin: 0px auto 10px;
+}
+
 .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -21,17 +35,20 @@
 }
 
 [class^="col"] {
+  margin: 10px 10px 0px;
+  padding: 5px;
+  overflow: hidden;
+  /*custom*/
   background-color: transparent;
   border: 1px solid black;
-  margin: 5px 15px;
-  padding: 2px 5px;
-  overflow: hidden;
+  text-align: center;
 }
 
 .col {
   width: auto;
 }
 
+/*MOBILE FIRST*/
 /*XS*/
 .col-xs-12 {
   width: 100%;
@@ -81,6 +98,7 @@
   width: 8.33333333%;
 }
 
+/* MEDIA SCREEN FOR RESPONSIVE ============================== */
 @media only screen and (min-width: 576px) {
   /*SM*/
   .col-sm-12 {
@@ -121,8 +139,8 @@
   }
 }
 
-/*MD*/
 @media only screen and (min-width: 768px) {
+  /*MD*/
   .col-md-12 {
     width: 100%;
   }
@@ -161,8 +179,8 @@
   }
 }
 
-/*LG*/
 @media only screen and (min-width: 992px) {
+  /*LG*/
   .col-lg-12 {
     width: 100%;
   }
@@ -201,62 +219,47 @@
   }
 }
 
-/*XL*/
 @media only screen and (min-width: 1200px) {
-  .col-lg {
-    width: auto;
-  }
-  .col-lg-12 {
+  /*XL*/
+  .col-xl-12 {
     width: 100%;
   }
-  .col-lg-11 {
+  .col-xl-11 {
     width: 91.66666667%;
   }
-  .col-lg-10 {
+  .col-xl-10 {
     width: 83.33333333%;
   }
-  .col-lg-9 {
+  .col-xl-9 {
     width: 75%;
   }
-  .col-lg-8 {
+  .col-xl-8 {
     width: 66.66666667%;
   }
-  .col-lg-7 {
+  .col-xl-7 {
     width: 58.33333333%;
   }
-  .col-lg-6 {
+  .col-xl-6 {
     width: 50%;
   }
-  .col-lg-5 {
+  .col-xl-5 {
     width: 41.66666667%;
   }
-  .col-lg-4 {
+  .col-xl-4 {
     width: 33.33333333%;
   }
-  .col-lg-3 {
+  .col-xl-3 {
     width: 25%;
   }
-  .col-lg-2 {
+  .col-xl-2 {
     width: 16.66666667%;
   }
-  .col-lg-1 {
+  .col-xl-1 {
     width: 8.33333333%;
   }
 }
 
-html {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
-}
-
-body {
-  color: #101202;
-}
-
-/*MOTHERSHIP THEME*/
-/* MEDIA ============================== */
-/* Print styles */
+/* MEDIA PRINT ============================== */
 @media print {
   *,
   *:before,
@@ -307,4 +310,6 @@ body {
     page-break-after: avoid;
   }
 }
+
+/*MOTHERSHIP THEME*/
 /*# sourceMappingURL=main.css.map */
