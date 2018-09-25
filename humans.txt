@@ -2,23 +2,18 @@
 # The humans responsible & technology colophon
                             
 /* TEAM */
-
                             
 Name: Name
 Contact: Mail, Url or Social Media
 From: City, Country
-
 
 /* THANKS */
 
-
 Name: Name
 Contact: Mail, Url or Social Media
 From: City, Country
-
-                            
+                   
 /* SITE */
-
                             
 Last update: YYYY/MM/DD 
                           

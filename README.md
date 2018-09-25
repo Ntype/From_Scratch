@@ -1,6 +1,6 @@
 # Motherbase
 
-A blank personal boilerplate starter kit on three flavors (webpages, webapps and wordpress). Based on the w3c standar, the Google best  practices. Include a lightweight grid system compatible with Bootstrap v4.
+A blank personal boilerplate starter kit on three flavors (webpages, webapps and wordpress). Based on the w3c standar and Google best  practices. Include a modular Sass library with a lightweight grid system compatible with Bootstrap v4.
 
 ## Built With
 

@@ -6,3 +6,4 @@ Disallow:/images/layout/
 
 User-agent: *
 Allow: /
+Disallow:/images/layout/
