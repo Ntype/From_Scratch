@@ -1,6 +1,7 @@
 
-/* HELPER CLASES ============================== */
+/* UTILITIES CLASES ============================== */
 
+/*DISPLAY*/
 .hidden {
     display: none !important;
     visibility: hidden;
@@ -31,6 +32,7 @@
     visibility: hidden;
 }
 
+/*CLEARFIX*/
 .clearfix:before,
 .clearfix:after {
     content: " ";
