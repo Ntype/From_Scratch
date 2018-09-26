@@ -1,55 +1,49 @@
-  ///////////////////
- // MAIN SETTINGS //
-/////////////////// 
-  
-//Paths
-$img-path: 												                                    "images";
+ // VARIABLES //
 
-//Logo
-$logo:                                                              "/main-logo.png";
-$logo-path:                                                         $img-path + $logo;
+// Paths
+$img-path: "images/";
+$img-path-layout: "images/layout";
 
-//fonts
-$primary-font:                                                     'Open Sans'; 
-$font-family-primary:                                              $primary-font, Helvetica, Arial, sans-serif;
+// Logo
+$logo: "/main-logo.svg";
+$logo-path: $img-path-layout + $logo;
 
-//font weights
-$light:                                                               '300';
-$regular:                                                             '400';
-$semi-bold:                                                           '600';
-$bold:                                                                '700';
+// Fonts
+$primary-font: 'Custom Font'; 
+$font-family-primary: $primary-font, Helvetica, Arial, sans-serif;
+$icon-font: 'Material Icons';
 
-//border
-$border-size:                                                         1px;
-$border-style:                                                        solid;
-$border-radius-size:                                                  4px;
+// Font weights
+$light:'300';
+$regular:'400';
+$semi-bold:'600';
+$bold:'700';
 
-  //////////////////
- // Color Scheme //
-//////////////////
+// Color palette  
+$color-1:#ffffff;
+$color-2:#818181;
+$color-3:#606060;
+$color-4:#3b3b3b;
+$color-5:#000000;
+$font-color:#232323;
+// You must change the palette and the names for your specific layout. 
+// Visit https://color.adobe.com/explore)
 
-//Palette
-$color-1:                                                             #DCE491;
-$color-2:                                                             #101202;
-$color-3:                                                             #C4D613;
-$color-4:                                                             #565708;
-$color-5:                                                             #909E0E;
-
-//Main Colors
-$brightest-color:                                                      $color-1;
-$darkest-color:                                                        $color-2;
-$brand-color:                                                          $color-3;
-$bg-main-color:                                                        $brightest-color;
-$font-color:                                                           $darkest-color;
-$font-highlight:                                                       $color-4;
+// Grid columns system
+$grid-columns: 12 !default;
+$grid-gutter: 30px !default;
 
 
-  ///////////
- // Sizes //
-///////////
+// Breakpoints
+$xs: 0px;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
 
-$main-wrapper-max-width:                                               1280px;
-$sidebar-size:                                                         20%;
-$wrapper-size:                                                         80%;
-$gap:                                                                  30px;
-         
+// Container max-width
+$container-xs: 100%;
+$container-sm: 540px;
+$container-md: 720px;
+$container-lg: 960px;
+$container-xl: 1140px;
