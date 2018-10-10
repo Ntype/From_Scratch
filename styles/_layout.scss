@@ -118,6 +118,16 @@
             margin-left: ($size * $i);
         }
     }
+        
+    @for $i from 1 through $grid-columns {
+        $size: (100% / $grid-columns);
+        .col-#{$i} {
+            width: calc(#{$size} * #{$i});
+        }
+        .offset-#{$i} {
+            margin-left: calc(#{$size} * #{$i});
+        }
+    }
 
 /* MEDIA SCREEN MOBILE FIRST */
 
@@ -134,6 +144,7 @@
                 margin-left: ($size * $i);
             }
         }
+
 
         /* margin auto for xs */
         .ml-xs-auto{margin-left: auto!important;}
@@ -159,6 +170,7 @@
             }
         }
 
+
         /* margin auto for sm */
         .ml-sm-auto{margin-left: auto!important;}
         .mr-sm-auto{margin-right: auto!important;}
@@ -182,6 +194,7 @@
                 margin-left: ($size * $i);
             }
         }
+
         
         /* margin auto for md */
         .ml-md-auto{margin-left: auto!important;}
@@ -206,6 +219,7 @@
                 margin-left: ($size * $i);
             }
         }
+
             
         /* margin auto for lg */
         .ml-lg-auto{margin-left: auto!important;}
@@ -229,7 +243,7 @@
                 margin-left: ($size * $i);
             }
         }
-            
+
         /* margin auto for xl */
         .ml-xl-auto{margin-left: auto!important;}
         .mr-xl-auto{margin-right: auto!important;}
