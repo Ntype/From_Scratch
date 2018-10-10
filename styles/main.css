@@ -335,6 +335,43 @@ template {
   display: none;
 }
 
+html {
+  font-family: "Custom Font", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+body {
+  color: #232323;
+  font-size: 1rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+h1, .h1 {
+  font-size: 2.5rem;
+}
+
+h2, .h2 {
+  font-size: 2rem;
+}
+
+h3, .h3 {
+  font-size: 1.75rem;
+}
+
+h4, .h4 {
+  font-size: 1.5rem;
+}
+
+h5, .h5 {
+  font-size: 1.25rem;
+}
+
+h6, .h6 {
+  font-size: 1rem;
+}
+
 /* UTILITIES CLASES ============================== */
 /*DISPLAY*/
 .hidden {
@@ -396,14 +433,6 @@ template {
   padding-top: 20px;
 }
 
-html {
-  font-family: "Custom Font", Helvetica, Arial, sans-serif;
-}
-
-body {
-  color: #232323;
-}
-
 /* == LAYOUT ===================================================== */
 *, ::after, ::before {
   -webkit-box-sizing: border-box;
@@ -439,8 +468,8 @@ body {
   position: relative;
   width: 100%;
   min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 0.9375rem;
+  padding-left: 0.9375rem;
 }
 
 .col-auto {

@@ -9,15 +9,27 @@ $logo: "/main-logo.svg";
 $logo-path: $img-path-layout + $logo;
 
 // Fonts
-$primary-font: 'Custom Font'; 
-$font-family-primary: $primary-font, Helvetica, Arial, sans-serif;
-$icon-font: 'Material Icons';
+$font-custom: 'Custom Font'; 
+$font-family-base: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-primary: $font-custom, $font-family-base !default;
+$font-icon: 'Material Icons' !default;
 
 // Font weights
-$light:'300';
-$regular:'400';
-$semi-bold:'600';
-$bold:'700';
+$font-weight-light: 300 !default;
+$font-weight-normal: 400 !default;
+$font-weight-semibold: 600 !default;
+$font-weight-bold: 700 !default;
+
+// Font Size
+$font-size-base: 1rem !default; 
+$line-height-base: 1.5 !default;
+
+$h1-font-size: $font-size-base * 2.5 !default;
+$h2-font-size: $font-size-base * 2 !default;
+$h3-font-size: $font-size-base * 1.75 !default;
+$h4-font-size: $font-size-base * 1.5 !default;
+$h5-font-size: $font-size-base * 1.25 !default;
+$h6-font-size: $font-size-base !default;
 
 // Color palette  
 $color-1:#ffffff;
@@ -31,7 +43,7 @@ $font-color:#232323;
 
 // Grid columns system
 $grid-columns: 12 !default;
-$grid-gutter: 30px !default;
+$grid-gutter: 1.875rem !default;
 
 
 // Breakpoints
